@@ -55,7 +55,7 @@
 #endif
 #endif
 
-#define  VERSION "2.01kai"
+#define  VERSION "2.01kai2"
 #define  NENGOU  "1992-1998"
 
 
@@ -1008,7 +1008,14 @@ for(i=0;i<30;++i){
                   ++kt;
                 }
                 ++i;
-        	if(!tppp) {putchar('\''); ++i;}
+        	    if(!tppp) {
+                  if (doubleQuotation) {
+                    putchar('\"');
+                  } else {
+                    putchar('\'');
+                  }
+                  ++i;
+                }
               }
               ++bc;
             }
