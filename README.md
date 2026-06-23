@@ -15,7 +15,7 @@ hojaは非常に高機能なZ80逆アセンブラですがこれで逆アセン�
 10進数にDを付けない  
 
 ## z80asでアセンブルできるようにするためのオプション
-hoja -oXXXX -d -g -u -p -q input.bin > output.asm  
+hoja -o XXXX -d -g -u -p -q input.bin > output.asm  
 -o の XXXXは開始アドレス  
 
 ## 作者
